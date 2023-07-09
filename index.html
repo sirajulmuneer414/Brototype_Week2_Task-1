@@ -43,9 +43,9 @@
                     <div class="search flex-nowrap overflow-hidden">
                         <input type="text" placeholder="Search" id="searchBar">
                         <span id="slash">/</span>
-                        <span class="material-symbols-outlined" id="moon">
-                            dark_mode
-                            </span>
+                        <div style="display: inline;" class="material-symbols-outlined" id="moon">
+                            light_mode
+                            </div>
                             <a href="https://twitter.com/angular"><i class="fab fa-twitter" style="font-size: 24px; color: #fff; margin-right: 10px;"></i></a>
                             <a href="https://github.com/angular/angular"><i class="fab fa-github" style="font-size: 24px; color: #fff; margin-right: 10px;"></i></a>
                             <a href="https://www.youtube.com/angular"><i class="fab fa-youtube" style="font-size: 24px; color: #fff; margin-right: 10px;"></i></a>
@@ -87,7 +87,7 @@
                 <br>
                 with confidence
                 </h1>
-                <button id="tryangular">TRY ANGULAR</button>
+                <button class="tryangular" id="triangle">TRY ANGULAR</button>
 
             </div>
         </div>
@@ -95,7 +95,7 @@
     <section class="container-lg thirdpart" >
         <div class="row justify-content-center mt-5 ">
             <div class="col">
-                <h2 style="font-size: 32px; font-weight: 500;">The web development framework for building the future</h2>
+                <h2 style="font-size: 32px; font-weight: 500; color: black;" id="webDev">The web development framework for building the future</h2>
             </div>
         </div>
         <div class="card-deck justify-content-center">
@@ -104,7 +104,7 @@
                     <div class="card-body">
                         <h2 class="card-title">WORK AT ANY SCALE</h2>
                         <img class="card-img" src="./images/fourth1.svg" alt="fourth1">
-                    <p class="card-text">Angular lets you start small and supports you as your team and apps grow.</p>
+                    <p class="card-text" id="card-text1">Angular lets you start small and supports you as your team and apps grow.</p>
                     <p class="card-link">Read how Angular helps you grow</p>
                   </div>
                 </div>
@@ -112,7 +112,7 @@
                     <div class="card-body">
                         <h2 class="card-title">LOVED BY MILLIONS</h2>
                         <img class="card-img" src="./images/fouth2.svg" alt="fourth2">
-                    <p class="card-text">Join the millions of developers building with Angular in a thriving and friendly community.
+                    <p class="card-text" id="card-text2">Join the millions of developers building with Angular in a thriving and friendly community.
                     </p>
                     <p class="card-link">Meet the Angular commmunity</p>
                   </div>
@@ -121,7 +121,7 @@
                     <div class="card-body">
                         <h2 class="card-title">BUILD FOR EVERYONE</h2>
                         <img class="card-img" src="./images/fourth3.svg" alt="fourth3">
-                    <p class="card-text">Rely on Angular's internationalization tools, security, and accessibility to build for everyone around the world.
+                    <p class="card-text" id="card-text3">Rely on Angular's internationalization tools, security, and accessibility to build for everyone around the world.
                     </p>
                     <p class="card-link">Learn more about Angular's tools</p>
                   </div>
@@ -129,9 +129,73 @@
               </div>
         </div>
         <div class="row learnmore justify-content-center">
-            <button class="col-2"><h2>LEARN MORE</h2></button>
+            <button class="col-2" id="learn"><h2>LEARN MORE</h2></button>
         </div>
     </section>
+    <footer class="container-fluid d-flex align-items-center">
+        <section class="container footerdiv">
+            <div class="row gy-5">
+                <div class="col-6 col-sm-6 col-md-3 col-lg-3 col-xl-3 col-xxl-3 foot gt">
+
+                    <h5>Resources</h5>
+                    <ul class="foolist">
+                        <li title="Angular contributors.">About</li>
+                        <li title="Angular tools, training, and blogs from around the web.">Resource listing</li>
+                        <li title="Press contacts, logos, and branding.">Press kit</li>
+                        <li title="Angular Blog">Blog</li>
+                    </ul>
+
+                </div>
+                <div class="col-6 col-sm-6 col-md-3 col-lg-3 col-xl-3 col-xxl-3 foot">
+
+                    <h5>Help</h5>
+                    <ul class="foolist">
+                        <li title="Stack Overflow: where the community answers your technical Angular questions.">Stack Overflow</li>
+                        <li title="Join the discussions at Angular Community Discord server.">Join Discord</li>
+                        <li title="Chat about Angular with other birds of a feather.">Gitter</li>
+                        <li title="Post issues and suggestions on github.">Report Issues</li>
+                        <li title="Treating each other with respect.">Code of Conduct</li>
+                    </ul>
+                  
+
+                </div>
+                <div class="col-6 col-sm-6 col-md-3 col-lg-3 col-xl-3 col-xxl-3 foot">
+
+                    <h5>Community</h5>
+                    <ul class="foolist">
+                        <li title="Angular events around the world.">Events</li>
+                        <li title="Attend a meetup and learn from fellow developers.">Meetups</li>
+                        <li title="Twitter">Twitter</li>
+                        <li title="GitHub">GitHub</li>
+                        <li title="Contribute to Angular">Contribute</li>
+                    </ul>
+
+                </div>
+                <div class="col-6 col-sm-6 col-md-3 col-lg-3 col-xl-3 col-xxl-3 foot">
+
+                    <h5>Languages</h5>
+                    <ul class="foolist">
+                        <li title="Español">Español</li>
+                        <li title="简体中文版">简体中文版</li>
+                        <li title="正體中文版">正體中文版</li>
+                        <li title="日本語版">日本語版</li>
+                        <li title="한국어">한국어</li>
+                        <li title="Complete language list">Complete language list</li>
+                    </ul>
+
+                </div>
+            </div>
+            <div class="row justify-content-center text-center mt-5">
+    
+                <div class="col-12"> <P>Super-powered by Google ©2010-2023.</P></div>
+                <div class="col-12"><p  class="fooa"> Code licensed under an <a href="#" title="License text">MIT-style License</a>. Documentation licensed under <a href="#">CC BY 4.0</a>.
+                </p></div>
+                <div class="col-12"><p> Version 16.1.5-local+sha.1bf99e2f92.
+                </p></div>
+            </div>
+        </section>
+
+    </footer>
     
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>

@@ -5,6 +5,9 @@
     font-family: 'Roboto', sans-serif;
     box-sizing: border-box;
 }
+body{
+    background-color: #fff;
+}
 .bluebg{
     position: absolute;
     background-color: #1976d2;
@@ -202,7 +205,10 @@
     font-weight: 600;
     margin-bottom: 30px;
 }
-#tryangular{
+#learn{
+    background-color: #fff;
+}
+.tryangular{
     height: 42px;
     width: 188px;
     border:none;
@@ -211,8 +217,12 @@
     font-size: 18px;
     font-weight: 600;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.822);
+    background-color: #fff;
 }
-#tryangular:hover{
+#triangle{
+    background-color: #fff;
+}
+.tryangular:hover{
     cursor: pointer;
     text-decoration: underline;
     text-decoration-color:  #1976d2;
@@ -232,7 +242,7 @@
     }
 }
 .thirdpart{
-    height: 700px;
+    height: auto;
 }
 .row.justify-content-center.mt-5{
     text-align: center;
@@ -247,6 +257,7 @@
 }
 .card{
     border: none;
+    background-color: transparent;
 }
 .card h2{
     font-size: 20px;
@@ -302,4 +313,55 @@
 .learnmore button h2{
     font-size: 18px;
     font-weight: 600;
+}
+footer{
+    padding: 50px;
+    position: relative;
+    height: auto;
+    background-color: #1976d2;
+    
+}
+footer::after{
+    
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: url(./images/angular_whiteTransparent_withMargin.png) top 0 left 0 repeat,url(./images/angular_whiteTransparent_withMargin.png) top 80px left 160px repeat;
+    opacity: .05;
+    background-size: 320px auto;
+
+}
+footer section{
+    z-index: 1;
+}
+.footerdiv{
+
+    height: auto;
+    max-width: 1300px;
+    color: #fff;
+
+}
+.col-6.col-sm-6.col-md-3.col-lg-3.col-xl-3.col-xxl-3.foot h5{
+    text-transform: uppercase;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+.col-6.col-sm-6.col-md-3.col-lg-3.col-xl-3.col-xxl-3.foot li{
+    list-style: none;
+    margin-top: 10px;
+}
+.col-6.col-sm-6.col-md-3.col-lg-3.col-xl-3.col-xxl-3.foot ul{
+    padding-left: 0;
+}
+.fooa a{
+    text-decoration: none;
+    color: inherit;
+}
+.foolist li:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+.fooa a:hover{
+    cursor: pointer;
+    text-decoration: underline;
 }
